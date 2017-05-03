@@ -1,0 +1,11 @@
+INTERLIS 2.3;
+
+MODEL DMAVCHFP_20170503 (en)
+AT "mailto:stefan@localhost"
+VERSION "2017-05-03"  =
+
+  TOPIC TopicDef5 =
+
+  END TopicDef5;
+
+END DMAVCHFP_20170503.
