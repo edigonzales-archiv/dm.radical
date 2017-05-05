@@ -1,0 +1,26 @@
+INTERLIS 2.3;
+
+TYPE MODEL GeometryCHLV95_20170503 (en)
+AT "http://fubar.ch"
+VERSION "2017-05-03"  =
+  IMPORTS Units,CoordSys;
+
+  REFSYSTEM BASKET BCoordSys~CoordSys.CoordsysTopic
+    OBJECTS OF GeoCartesian2D:
+      CHLV95
+    OBJECTS OF GeoHeight:
+      SwissOrthometricAlt;
+
+  DOMAIN
+
+    Coord3 = COORD 2460000.000 .. 2870000.000 [INTERLIS.m]{CHLV95[1]}, 1045000.000 .. 1310000.000 [INTERLIS.m]{CHLV95[2]}, -200.000 .. 5000.000 [INTERLIS.m]{SwissOrthometricAlt[1]} ,ROTATION 2 -> 1;
+
+    Surface = SURFACE WITH (STRAIGHTS) VERTEX Coord3 WITHOUT OVERLAPS>0.002;
+
+    Area = AREA WITH (STRAIGHTS) VERTEX Coord3 WITHOUT OVERLAPS>0.002;
+
+    Line = POLYLINE WITH (STRAIGHTS) VERTEX Coord3;
+
+    Orientation = 0.00000 .. 359.99999 CIRCULAR [Units.Angle_Degree];
+
+END GeometryCHLV95_20170503.

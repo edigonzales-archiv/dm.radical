@@ -3,9 +3,42 @@ INTERLIS 2.3;
 MODEL DMAVCHFP_20170503 (en)
 AT "mailto:stefan@localhost"
 VERSION "2017-05-03"  =
+  IMPORTS GeometryCHLV95_20170503;
 
-  TOPIC TopicDef5 =
+  TOPIC Control_points =
+    OID AS INTERLIS.UUIDOID;
 
-  END TopicDef5;
+    CLASS Control_point =
+      Category : MANDATORY (
+        PCP1,
+        ACP1,
+        PCP2,
+        ACP2,
+        PCP3,
+        ACP3
+      );
+      Number : MANDATORY TEXT*12;
+      Geometry : MANDATORY GeometryCHLV95_20170503.Coord3;
+      Mark : MANDATORY (
+        boundary_marker,
+        bolt,
+        tube,
+        cross,
+        other
+      );
+    END Control_point;
+
+    CLASS Control_point_revision =
+      Description : MANDATORY TEXT*1024;
+      Perimeter : GeometryCHLV95_20170503.Surface;
+      State_of : INTERLIS.XMLDate;
+    END Control_point_revision;
+
+    ASSOCIATION Control_point_Control_point_revision =
+      Control_point -- {0..*} Control_point;
+      Control_point_revision -- {1} Control_point_revision;
+    END Control_point_Control_point_revision;
+
+  END Control_points;
 
 END DMAVCHFP_20170503.
