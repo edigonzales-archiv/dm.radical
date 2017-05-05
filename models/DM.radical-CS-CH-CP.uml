@@ -10018,7 +10018,7 @@
 <Syntax>2344</Syntax>
 </ch.ehi.interlis.constraints.ConstraintExpression>
 <ch.ehi.basics.types.NlsString TID="2344">
-<Entry TID="2345" language="en" translation="UNIQUE Number, Geometry;"/>
+<Entry TID="2345" language="en" translation="UNIQUE Number, Geometry;&#10;SET CONSTRAINT WHERE Category == #ACP1 OR Category == #ACP2 OR Category == #ACP3 : Mark == #other;"/>
 </ch.ehi.basics.types.NlsString>
 <ch.ehi.basics.types.NlsString TID="2315">
 </ch.ehi.basics.types.NlsString>

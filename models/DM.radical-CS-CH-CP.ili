@@ -27,6 +27,7 @@ VERSION "2017-05-03"  =
         other
       );
       UNIQUE Number, Geometry;
+      SET CONSTRAINT WHERE Category == #ACP1 OR Category == #ACP2 OR Category == #ACP3 : Mark == #other;
     END Control_point;
 
     CLASS Control_point_revision =
