@@ -1,0 +1,88 @@
+INTERLIS 2.3;
+
+MODEL DMCSCHLN_20170503 (en)
+AT "mailto:stefan@localhost"
+VERSION "2017-05-03"  =
+  IMPORTS GeometryCHLV95_20170503;
+
+  TOPIC Local_names =
+    OID AS INTERLIS.UUIDOID;
+
+    CLASS Local_geographical_name =
+      Name : MANDATORY TEXT*1024;
+      Geometry : MANDATORY GeometryCHLV95_20170503.Area;
+      UNIQUE Name;
+    END Local_geographical_name;
+
+    CLASS Local_geographical_name_Pos_name =
+      Pos : MANDATORY GeometryCHLV95_20170503.Coord3;
+      Ori : MANDATORY GeometryCHLV95_20170503.Orientation;
+      HAli : MANDATORY INTERLIS.HALIGNMENT;
+      VAli : MANDATORY INTERLIS.VALIGNMENT;
+    END Local_geographical_name_Pos_name;
+
+    CLASS Local_name_revision =
+      Description : MANDATORY TEXT*1024;
+      Perimeter : GeometryCHLV95_20170503.Surface;
+      State_of : INTERLIS.XMLDate;
+    END Local_name_revision;
+
+    CLASS Name_of_locality =
+      Name : MANDATORY TEXT*1024;
+      Geometry : MANDATORY GeometryCHLV95_20170503.Coord3;
+      UNIQUE Name;
+    END Name_of_locality;
+
+    CLASS Name_of_locality_Pos =
+      Pos : MANDATORY GeometryCHLV95_20170503.Coord3;
+      Ori : MANDATORY GeometryCHLV95_20170503.Orientation;
+      HAli : MANDATORY INTERLIS.HALIGNMENT;
+      VAli : MANDATORY INTERLIS.VALIGNMENT;
+    END Name_of_locality_Pos;
+
+    CLASS Place_name =
+      Name : MANDATORY TEXT*1014;
+      Geometry : MANDATORY GeometryCHLV95_20170503.Area;
+      UNIQUE Name;
+    END Place_name;
+
+    CLASS Place_name_Pos_name =
+      Pos : MANDATORY GeometryCHLV95_20170503.Coord3;
+      Ori : MANDATORY GeometryCHLV95_20170503.Orientation;
+      HAli : MANDATORY INTERLIS.HALIGNMENT;
+      VAli : MANDATORY INTERLIS.VALIGNMENT;
+    END Place_name_Pos_name;
+
+    ASSOCIATION Local_geographical_name_Local_name_revision =
+      r_Local_geographical_name -- {0..*} Local_geographical_name;
+      r_Geographical_Name_Local_name_revision -- {1} Local_name_revision;
+    END Local_geographical_name_Local_name_revision;
+
+    ASSOCIATION Name_of_locality_Local_name_revision =
+      r_Name_of_locality -- {0..*} Name_of_locality;
+      r_Name_of_locality_revision -- {1} Local_name_revision;
+    END Name_of_locality_Local_name_revision;
+
+    ASSOCIATION Place_name_Local_name_revision =
+      r_Place_name_revision -- {1} Local_name_revision;
+      r_Place_name -- {0..*} Place_name;
+    END Place_name_Local_name_revision;
+
+    ASSOCIATION Pos_Local_geographical_name =
+      r_Local_geographical_name -<#> {1} Local_geographical_name;
+      r_Pos_name_of -- {0..*} Local_geographical_name_Pos_name;
+    END Pos_Local_geographical_name;
+
+    ASSOCIATION Pos_Name_of_locality =
+      r_Pos_name_of -- {0..*} Name_of_locality_Pos;
+      r_Name_of_locality -<#> {1} Name_of_locality;
+    END Pos_Name_of_locality;
+
+    ASSOCIATION Pos_Place_name =
+      r_Pos_name_of -- {0..*} Place_name_Pos_name;
+      r_Place_name -<#> {1} Place_name;
+    END Pos_Place_name;
+
+  END Local_names;
+
+END DMCSCHLN_20170503.
