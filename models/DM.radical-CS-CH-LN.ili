@@ -33,12 +33,12 @@ VERSION "2017-05-03"  =
       UNIQUE Name;
     END Name_of_locality;
 
-    CLASS Name_of_locality_Pos =
+    CLASS Name_of_locality_Pos_name =
       Pos : MANDATORY GeometryCHLV95_20170503.Coord3;
       Ori : MANDATORY GeometryCHLV95_20170503.Orientation;
       HAli : MANDATORY INTERLIS.HALIGNMENT;
       VAli : MANDATORY INTERLIS.VALIGNMENT;
-    END Name_of_locality_Pos;
+    END Name_of_locality_Pos_name;
 
     CLASS Place_name =
       Name : MANDATORY TEXT*1014;
@@ -74,7 +74,7 @@ VERSION "2017-05-03"  =
     END Pos_Local_geographical_name;
 
     ASSOCIATION Pos_Name_of_locality =
-      r_Pos_name_of -- {0..*} Name_of_locality_Pos;
+      r_Pos_name_of -- {0..*} Name_of_locality_Pos_name;
       r_Name_of_locality -<#> {1} Name_of_locality;
     END Pos_Name_of_locality;
 

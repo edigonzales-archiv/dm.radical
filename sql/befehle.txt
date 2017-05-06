@@ -4,3 +4,9 @@ java -jar ~/Apps/ili2pg-3.8.1/ili2pg.jar --dbhost 192.168.50.4 --dbdatabase xana
 
 java -jar ~/Apps/ili2pg-3.8.1/ili2pg.jar --dbhost 192.168.50.4 --dbdatabase xanadu2 --dbusr stefan --dbpwd ziegler12 --nameByTopic --strokeArcs --createFk --createEnumTabs --createGeomIdx --createNumChecks --createFkIdx --defaultSrsCode 2056 --modeldir "http://models.interlis.ch;." --models DMCSCHCP_20170503 --dbschema dm_cs_ch_cp --export control_points.xtf
 
+
+# local names
+
+java -jar ~/Apps/ili2pg-3.8.1/ili2pg.jar --dbhost 192.168.50.4 --dbdatabase xanadu2 --dbusr stefan --dbpwd ziegler12 --nameByTopic --strokeArcs --createFk --createEnumTabs --createGeomIdx --createNumChecks --createFkIdx --defaultSrsCode 2056 --modeldir "http://models.interlis.ch;." --models DMCSCHLN_20170503 --dbschema dm_cs_ch_ln --schemaimport
+
+java -jar ~/Apps/ili2pg-3.8.1/ili2pg.jar --dbhost 192.168.50.4 --dbdatabase xanadu2 --dbusr stefan --dbpwd ziegler12 --nameByTopic --strokeArcs --createFk --createEnumTabs --createGeomIdx --createNumChecks --createFkIdx --defaultSrsCode 2056 --disableValidation --modeldir "http://models.interlis.ch;." --models DMCSCHLN_20170503 --dbschema dm_cs_ch_ln --export local_names.xtf

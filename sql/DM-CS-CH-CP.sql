@@ -1,5 +1,5 @@
-delete from dm_cs_ch_cp.control_points_control_point_revision;
 delete from dm_cs_ch_cp.control_points_control_point;
+delete from dm_cs_ch_cp.control_points_control_point_revision;
 
 with lfp as
 (
@@ -23,35 +23,34 @@ with lfp as
         ch_252000.fixpunktekatgrie3_lfp3
 ),
 nf as (
+	insert into 
+		dm_cs_ch_cp.control_points_control_point_revision (t_id, description, state_of, perimeter)
+		
     select 
-        t_id, beschreibung as description, gueltigereintrag as state_of, perimeter as perimeter
+        t_id, beschreibung as description, gueltigereintrag as state_of, ST_Force3D(perimeter) as perimeter
     from 
         ch_252000.fixpunktekatgrie1_lfp1nachfuehrung
         
     union all
     
     select 
-        t_id, beschreibung as description, gueltigereintrag as state_of, perimeter as perimeter
+        t_id, beschreibung as description, gueltigereintrag as state_of, ST_Force3D(perimeter) as perimeter
     from 
         ch_252000.fixpunktekatgrie2_lfp2nachfuehrung
         
     union all
     
     select 
-        t_id, beschreibung as description, gueltigereintrag as state_of, perimeter as perimeter
+        t_id, beschreibung as description, gueltigereintrag as state_of, ST_Force3D(perimeter) as perimeter
     from 
         ch_252000.fixpunktekatgrie3_lfp3nachfuehrung
-),
-foo as
-(
-    insert into dm_cs_ch_cp.control_points_control_point_revision (t_id, description, state_of, perimeter)
-    select
-        t_id, description, state_of, perimeter
-    from
-        nf
+    returning *
 ),
 lfp_ng as
 (
+	insert into 
+   		dm_cs_ch_cp.control_points_control_point (t_id, category, anumber,
+    	geometry, mark, r_control_point_revision)
     select 
         lfp.t_id, lfp.category, lfp.nummer as anumber, 
         case 
@@ -71,11 +70,9 @@ lfp_ng as
         nf  
     where
         lfp.entstehung = nf.t_id
-        
+    returning *
 )
-insert into 
-    dm_cs_ch_cp.control_points_control_point (t_id, category, anumber,
-    geometry, mark, r_control_point_revision)
-select 
-    t_id, category, anumber, geometry, mark, r_control_point_revision 
-from lfp_ng;
+select
+	*
+from
+	lfp_ng;
