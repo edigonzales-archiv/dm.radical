@@ -27,7 +27,7 @@ local_geo_name as
 		r_geographical_name_local_name_revision, geometry)
 	select 
 		flurn.t_id, flurn.aname, flurn.entstehung as r_geographical_name_local_name_revision, 
-		ST_Force3D(flurn.geometrie) as geometry
+		ST_SnapToGrid(ST_Force3D(flurn.geometrie), 0.00001) as geometry
 	from
 		nf,
 		ch_252000.nomenklatur_flurname as flurn
@@ -53,7 +53,7 @@ place_name as
 		r_place_name_revision, geometry)
 	select 
 		ort.t_id, ort.aname, ort.entstehung as r_place_name_revision, 
-		ST_Force3D(ort.geometrie) as geometry
+		ST_SnapToGrid(ST_Force3D(ort.geometrie), 0.00001) as geometry
 	from
 		nf,
 		ch_252000.nomenklatur_ortsname as ort
