@@ -16,7 +16,7 @@ with nf as
 		state_of, perimeter)
 	select 
 		t_id, identifikator as revision_id, beschreibung as description, gueltigereintrag as state_of, 
-		perimeter as perimeter
+		ST_SnapToGrid(ST_Force3D(perimeter), 0.00001) as perimeter
 	from 
 		dm01_tmp.nomenklatur_nknachfuehrung
 	returning *

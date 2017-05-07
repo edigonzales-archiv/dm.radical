@@ -12,7 +12,7 @@ with nf as
         dm_cs_ch_tb.territorl_bndries_municipal_boundary_revision
         (t_id, description, perimeter, state_of, revision_id, validity)
     select 
-        t_id, beschreibung as description, ST_Force3D(perimeter) as perimeter,
+        t_id, beschreibung as description, ST_SnapToGrid(ST_Force3D(perimeter), 0.00001) as perimeter,
         gueltigereintrag as state_of, identifikator as revision_id, 
         case 
             when gueltigkeit = 'gueltig' then 'valid'

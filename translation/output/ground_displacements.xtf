@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION SENDER="ili2pg-3.8.1-20170421" VERSION="2.3">
+    <MODELS>
+      <MODEL NAME="CoordSys" VERSION="2015-11-24" URI="http://www.interlis.ch/models"/>
+      <MODEL NAME="Units" VERSION="2012-02-20" URI="http://www.interlis.ch/models"/>
+      <MODEL NAME="GeometryCHLV95_20170503" VERSION="2017-05-03" URI="http://fubar.ch"/>
+      <MODEL NAME="DMCSCHGD_20170503" VERSION="2017-05-03" URI="mailto:stefan@localhost"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+</DATASECTION>
+</TRANSFER>

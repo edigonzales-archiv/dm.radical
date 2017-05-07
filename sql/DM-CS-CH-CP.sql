@@ -28,21 +28,21 @@ nf as (
 		dm_cs_ch_cp.control_points_control_point_revision (t_id, description, state_of, perimeter)
 		
     select 
-        t_id, beschreibung as description, gueltigereintrag as state_of, ST_Force3D(perimeter) as perimeter
+        t_id, beschreibung as description, gueltigereintrag as state_of, ST_SnapToGrid(ST_Force3D(perimeter), 0.00001) as perimeter
     from 
         dm01_tmp.fixpunktekatgrie1_lfp1nachfuehrung
         
     union all
     
     select 
-        t_id, beschreibung as description, gueltigereintrag as state_of, ST_Force3D(perimeter) as perimeter
+        t_id, beschreibung as description, gueltigereintrag as state_of, ST_SnapToGrid(ST_Force3D(perimeter), 0.00001) as perimeter
     from 
         dm01_tmp.fixpunktekatgrie2_lfp2nachfuehrung
         
     union all
     
     select 
-        t_id, beschreibung as description, gueltigereintrag as state_of, ST_Force3D(perimeter) as perimeter
+        t_id, beschreibung as description, gueltigereintrag as state_of, ST_SnapToGrid(ST_Force3D(perimeter), 0.00001) as perimeter
     from 
         dm01_tmp.fixpunktekatgrie3_lfp3nachfuehrung
     returning *

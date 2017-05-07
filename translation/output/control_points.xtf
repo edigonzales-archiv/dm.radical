@@ -1,0 +1,1409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION SENDER="ili2pg-3.8.1-20170421" VERSION="2.3">
+    <MODELS>
+      <MODEL NAME="CoordSys" VERSION="2015-11-24" URI="http://www.interlis.ch/models"/>
+      <MODEL NAME="Units" VERSION="2012-02-20" URI="http://www.interlis.ch/models"/>
+      <MODEL NAME="GeometryCHLV95_20170503" VERSION="2017-05-03" URI="http://fubar.ch"/>
+      <MODEL NAME="DMCSCHCP_20170503" VERSION="2017-05-03" URI="mailto:stefan@localhost"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <DMCSCHCP_20170503.Control_points BID="DMCSCHCP_20170503.Control_points">
+      <DMCSCHCP_20170503.Control_points.Control_point_revision TID="2edb92fc-3445-4a5f-82bc-90cefc0458b2">
+        <Description>LFP2-</Description>
+        <State_of>2011-05-25</State_of>
+      </DMCSCHCP_20170503.Control_points.Control_point_revision>
+      <DMCSCHCP_20170503.Control_points.Control_point_revision TID="e48a78aa-61df-4efc-bf9d-300d1d6eac19">
+        <Description>BBNF1-</Description>
+        <State_of>2001-02-28</State_of>
+      </DMCSCHCP_20170503.Control_points.Control_point_revision>
+      <DMCSCHCP_20170503.Control_points.Control_point_revision TID="c94fac04-9410-4533-8498-7ec37ace89f5">
+        <Description>LFNF1-</Description>
+        <State_of>2001-02-28</State_of>
+      </DMCSCHCP_20170503.Control_points.Control_point_revision>
+      <DMCSCHCP_20170503.Control_points.Control_point_revision TID="a74398ad-1088-4e9b-9ed8-7f1f21a84459">
+        <Description>AVS LFP 1-</Description>
+        <State_of>2006-10-31</State_of>
+      </DMCSCHCP_20170503.Control_points.Control_point_revision>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="370f4504-6773-46c8-953b-a55c68a9410d">
+        <Category>PCP2</Category>
+        <Number>11275250</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613038.832</C1>
+            <C2>1224503.738</C2>
+            <C3>468.57</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="2edb92fc-3445-4a5f-82bc-90cefc0458b2"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="a89ac02f-03cf-4811-80be-b2a5fd7c2f52">
+        <Category>PCP3</Category>
+        <Number>25205211</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612827.454</C1>
+            <C2>1224235.64</C2>
+            <C3>465.021</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="e48a78aa-61df-4efc-bf9d-300d1d6eac19"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="723119bd-143a-49e2-98ba-44997aaf0e43">
+        <Category>PCP3</Category>
+        <Number>25205210</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612887.035</C1>
+            <C2>1224019.085</C2>
+            <C3>464.826</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="e48a78aa-61df-4efc-bf9d-300d1d6eac19"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="234e5ad1-d10f-44ac-8bde-5ce5f346ff2c">
+        <Category>PCP3</Category>
+        <Number>25205209</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612880.097</C1>
+            <C2>1224047.607</C2>
+            <C3>466.357</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="e48a78aa-61df-4efc-bf9d-300d1d6eac19"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="8587579d-0f29-41b0-bcd7-f04299f1a413">
+        <Category>PCP3</Category>
+        <Number>25205200</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612748.508</C1>
+            <C2>1224145.19</C2>
+            <C3>465.703</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="9f4d6f97-ca5f-4f54-8d6e-403f7a7d70c5">
+        <Category>PCP3</Category>
+        <Number>25205198</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612841.245</C1>
+            <C2>1224193.835</C2>
+            <C3>465.405</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="2cdff6b2-4816-4d86-847d-43ccc310590c">
+        <Category>PCP3</Category>
+        <Number>25205195</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612888.719</C1>
+            <C2>1224189.019</C2>
+            <C3>465.897</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="2d0dc09b-d731-4293-884d-0d2a28a2c119">
+        <Category>PCP3</Category>
+        <Number>25205194</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612892.92</C1>
+            <C2>1224218.955</C2>
+            <C3>465.488</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="b1378079-2cf1-4e60-a6ae-3584318c5fb7">
+        <Category>PCP3</Category>
+        <Number>25205167</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612512.962</C1>
+            <C2>1224760.664</C2>
+            <C3>452.038</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="c824f023-c843-4f40-80b3-d2513fae5bd5">
+        <Category>PCP3</Category>
+        <Number>25205163</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612988.862</C1>
+            <C2>1224299.665</C2>
+            <C3>466.535</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="126dcc62-2df0-4b28-a844-58223fa8346d">
+        <Category>PCP3</Category>
+        <Number>25205162</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613111.898</C1>
+            <C2>1224275.204</C2>
+            <C3>467.861</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="370251ca-f696-4556-a753-817ce0a33112">
+        <Category>PCP3</Category>
+        <Number>25205160</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612562.659</C1>
+            <C2>1224429.843</C2>
+            <C3>462.13</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="8c391c70-daca-4fcb-9b20-465bf420a059">
+        <Category>PCP3</Category>
+        <Number>25205159</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612535.355</C1>
+            <C2>1224109.752</C2>
+            <C3>459.67</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="38adb00f-357c-40fc-ab1f-e8791200f950">
+        <Category>PCP3</Category>
+        <Number>25205155</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613105.289</C1>
+            <C2>1224361.866</C2>
+            <C3>470.794</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="870c529c-6c7f-4903-8e56-613094f748c5">
+        <Category>PCP3</Category>
+        <Number>25205154</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613086.044</C1>
+            <C2>1224326.414</C2>
+            <C3>469.644</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="22c67a43-3862-4c35-bfcf-14edeeacda10">
+        <Category>PCP3</Category>
+        <Number>25205153</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612999.836</C1>
+            <C2>1224341.54</C2>
+            <C3>468.741</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="aafdf9d7-1965-44d7-8a27-6b8e57593947">
+        <Category>PCP3</Category>
+        <Number>25205152</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613096.605</C1>
+            <C2>1224168.639</C2>
+            <C3>466.392</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="5a29b683-e347-419c-a6f0-676bf49b7701">
+        <Category>PCP3</Category>
+        <Number>25205151</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613079.153</C1>
+            <C2>1224115.329</C2>
+            <C3>466.525</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="ff2cbb59-0f09-4667-9dea-72c6823a01c1">
+        <Category>PCP3</Category>
+        <Number>25205150</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613031.93</C1>
+            <C2>1224088.707</C2>
+            <C3>466.977</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="5bdc60e1-97f6-424a-b2b9-1bb02f51abb2">
+        <Category>PCP3</Category>
+        <Number>25205149</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612574.045</C1>
+            <C2>1224211.971</C2>
+            <C3>461.951</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="385782c5-5105-4a0d-b129-c14c055c4b4f">
+        <Category>PCP3</Category>
+        <Number>25205147</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612156.168</C1>
+            <C2>1224636.133</C2>
+            <C3>453.126</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="d524904e-d648-4d9a-ab63-9dc32981d332">
+        <Category>PCP3</Category>
+        <Number>25205146</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612145.966</C1>
+            <C2>1224577.736</C2>
+            <C3>453.168</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="c847b9ac-4fbc-4144-82b6-869e9384d699">
+        <Category>PCP3</Category>
+        <Number>25205145</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612259.192</C1>
+            <C2>1224619.185</C2>
+            <C3>453.265</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="9d0a692f-9325-4a6a-a81d-415c77cf48e5">
+        <Category>PCP3</Category>
+        <Number>25205144</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612441.034</C1>
+            <C2>1224072.005</C2>
+            <C3>455.48</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="b8dec6af-f475-4d8d-9f1b-506534ad6308">
+        <Category>PCP3</Category>
+        <Number>25205143</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612418.255</C1>
+            <C2>1224118.436</C2>
+            <C3>454.827</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="33a2e163-cc70-407f-9f26-c1c1da3dec1c">
+        <Category>PCP3</Category>
+        <Number>25205142</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612394.514</C1>
+            <C2>1224167.881</C2>
+            <C3>454.761</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="a620a1e0-95d3-4065-9601-6532d5cf777f">
+        <Category>PCP3</Category>
+        <Number>25205141</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612433.391</C1>
+            <C2>1224240.967</C2>
+            <C3>454.596</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="185129cd-6810-417d-96a5-0244cfb40180">
+        <Category>PCP3</Category>
+        <Number>25205140</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612443.704</C1>
+            <C2>1224322.832</C2>
+            <C3>454.429</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="eb0d0e1d-c340-42c9-aff9-9026c3708f42">
+        <Category>PCP3</Category>
+        <Number>25205139</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612443.848</C1>
+            <C2>1224373.089</C2>
+            <C3>454.221</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="da4a0ed8-37e2-4092-b5f9-8c6d84fac64c">
+        <Category>PCP3</Category>
+        <Number>25205138</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613162.082</C1>
+            <C2>1224137.403</C2>
+            <C3>467.231</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="b209399c-b179-48b6-b806-bfb83b5ceeaf">
+        <Category>PCP3</Category>
+        <Number>25205137</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612980.994</C1>
+            <C2>1224151.77</C2>
+            <C3>467.736</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="d140a597-4a49-4313-a576-7db02187f3f6">
+        <Category>PCP3</Category>
+        <Number>25205136</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613027.464</C1>
+            <C2>1224147.418</C2>
+            <C3>466.966</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="9d697fb2-5240-492d-bf7f-e0dc886fac29">
+        <Category>PCP3</Category>
+        <Number>25205135</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612826.046</C1>
+            <C2>1223932.285</C2>
+            <C3>461.527</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="30e72b51-571b-4c94-8f11-f636d081aeb4">
+        <Category>PCP3</Category>
+        <Number>25205134</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612775.254</C1>
+            <C2>1223999.056</C2>
+            <C3>462.16</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="6533bece-ea70-4403-8f8c-2f88912fe58d">
+        <Category>PCP3</Category>
+        <Number>25205133</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612965.822</C1>
+            <C2>1224065.74</C2>
+            <C3>467.059</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="e3873ee8-d32b-46d7-b7d1-8c9117d6725d">
+        <Category>PCP3</Category>
+        <Number>25205131</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612812.74</C1>
+            <C2>1224075.432</C2>
+            <C3>465.325</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="2d50fa60-ddb6-494e-987b-5e89f3b7cd0d">
+        <Category>PCP3</Category>
+        <Number>25205130</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612291.6</C1>
+            <C2>1224552.441</C2>
+            <C3>453.1</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="9c8c4f56-e4f6-4e1e-99ab-557ec4538239">
+        <Category>PCP3</Category>
+        <Number>25205123</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613016.679</C1>
+            <C2>1224414.553</C2>
+            <C3>471.651</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="33b668f2-5566-41ba-ae58-530a088a33b0">
+        <Category>PCP3</Category>
+        <Number>25294148</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613897.2</C1>
+            <C2>1224355.261</C2>
+            <C3>477.761</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="1f8a29c1-f98e-4ffa-a17b-c15fe909d979">
+        <Category>PCP3</Category>
+        <Number>25205121</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613710.528</C1>
+            <C2>1224197.67</C2>
+            <C3>477.668</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="7b549b7e-3902-4a83-bc33-95b06aa7ef3e">
+        <Category>PCP3</Category>
+        <Number>25205120</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613670.858</C1>
+            <C2>1224172.091</C2>
+            <C3>476.171</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="9e7fb477-7ee2-4eb8-9839-6260147b3d19">
+        <Category>PCP3</Category>
+        <Number>25205119</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613729.178</C1>
+            <C2>1224140.198</C2>
+            <C3>476.47</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="db8fcfa4-75cb-450f-91f6-1513e8d1eb37">
+        <Category>PCP3</Category>
+        <Number>25205118</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613787.772</C1>
+            <C2>1224120.144</C2>
+            <C3>479.044</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="e0d15981-86f1-4984-861d-8b7a5df6cc91">
+        <Category>PCP3</Category>
+        <Number>25205117</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613856.226</C1>
+            <C2>1224121.096</C2>
+            <C3>481.701</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="4ae76b45-fd46-46e4-bd21-d0b1b3cf5fe0">
+        <Category>PCP3</Category>
+        <Number>25205116</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613960.232</C1>
+            <C2>1224107.588</C2>
+            <C3>482.224</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="6ab35d3f-f84f-46bc-ae4b-6de3d7caccf6">
+        <Category>PCP3</Category>
+        <Number>25205115</Number>
+        <Geometry>
+          <COORD>
+            <C1>2614072.448</C1>
+            <C2>1224100.514</C2>
+            <C3>481.765</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="1ef8a1db-b4b5-4476-8515-ce0079c32af8">
+        <Category>PCP3</Category>
+        <Number>25205111</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613713.314</C1>
+            <C2>1223927.522</C2>
+            <C3>476.348</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="5e8f9bb3-3f4b-4568-b8e0-7fd39d9b4971">
+        <Category>PCP3</Category>
+        <Number>25205110</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613712.127</C1>
+            <C2>1224448.661</C2>
+            <C3>481.047</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="51b23e7f-be34-4584-a89e-ca506770be5d">
+        <Category>PCP3</Category>
+        <Number>25205109</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613654.823</C1>
+            <C2>1224319.462</C2>
+            <C3>480.894</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="63c953ba-3cce-4485-a8e7-a4ab49bb3ffa">
+        <Category>PCP3</Category>
+        <Number>25205107</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613254.048</C1>
+            <C2>1224080.349</C2>
+            <C3>473.879</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="b4b8e033-435a-4f3c-9fba-27d0fc4f8efe">
+        <Category>PCP3</Category>
+        <Number>25205106</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612504.987</C1>
+            <C2>1224115.645</C2>
+            <C3>459.326</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="d2928380-27f5-478c-bb07-3531864c69b1">
+        <Category>PCP3</Category>
+        <Number>25205105</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612483.206</C1>
+            <C2>1224143.335</C2>
+            <C3>461.043</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="85b3268d-a407-4e8f-8d69-0ec6b8f2ed28">
+        <Category>PCP3</Category>
+        <Number>25205104</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612282.419</C1>
+            <C2>1224151.362</C2>
+            <C3>454.886</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="afbec89e-bc40-41c8-9e89-5604ecc20df4">
+        <Category>PCP3</Category>
+        <Number>25205103</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612102.497</C1>
+            <C2>1224114.426</C2>
+            <C3>455.19</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="32b795c1-fbf3-4618-81f4-cb7ac561db70">
+        <Category>PCP3</Category>
+        <Number>25205102</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612135.15</C1>
+            <C2>1224280.001</C2>
+            <C3>454.414</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="6fadd353-2d0f-4c59-8814-0599cbbd5ed4">
+        <Category>PCP3</Category>
+        <Number>25205101</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612552.127</C1>
+            <C2>1224063.721</C2>
+            <C3>455.474</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="4f4807ce-8d90-48e6-b9b9-e07e1764f4bf">
+        <Category>PCP3</Category>
+        <Number>25205100</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612602.153</C1>
+            <C2>1224123.77</C2>
+            <C3>463.175</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="32731dc8-ef37-441a-b6fc-17a074889f68">
+        <Category>PCP3</Category>
+        <Number>25205072</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613614.351</C1>
+            <C2>1224001.206</C2>
+            <C3>474.744</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="91ef77b1-325d-416e-b428-17b6d283539d">
+        <Category>PCP3</Category>
+        <Number>25205071</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613837.61</C1>
+            <C2>1224224.763</C2>
+            <C3>478.179</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="72433129-c214-40f3-a786-88a6253a50af">
+        <Category>PCP3</Category>
+        <Number>25205060</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613920.956</C1>
+            <C2>1223731.182</C2>
+            <C3>472.934</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="9bffc88a-e0fc-4f09-84d2-dd7ee4ba23fd">
+        <Category>PCP3</Category>
+        <Number>25205059</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613806.22</C1>
+            <C2>1223847.342</C2>
+            <C3>476.302</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="59c5c6d8-642b-447c-968d-34e1afa6f2f7">
+        <Category>PCP3</Category>
+        <Number>25205058</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612651.137</C1>
+            <C2>1224724.137</C2>
+            <C3>462.134</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="49853827-bf09-4418-8d22-0d38c395f19b">
+        <Category>PCP3</Category>
+        <Number>25205056</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612802.12</C1>
+            <C2>1224525.826</C2>
+            <C3>468.794</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="650dc230-6b3f-42f1-b698-f86c4b0f7bab">
+        <Category>PCP3</Category>
+        <Number>25205055</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613344.134</C1>
+            <C2>1224193.975</C2>
+            <C3>472.639</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="01d9a51d-22f5-42ba-8959-5dd76fc6f270">
+        <Category>PCP3</Category>
+        <Number>25205054</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613203.359</C1>
+            <C2>1224115.736</C2>
+            <C3>469.792</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="7082bf9f-5445-4321-a5ef-d7607bddd7e5">
+        <Category>PCP3</Category>
+        <Number>25205053</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613139.887</C1>
+            <C2>1223942.984</C2>
+            <C3>466.325</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="2032f631-f072-4bad-b453-ae3030dea7c3">
+        <Category>PCP3</Category>
+        <Number>25205050</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613154.12</C1>
+            <C2>1223679.401</C2>
+            <C3>465.902</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="a55bcfc0-9349-476b-8640-d7498c04e2be">
+        <Category>PCP3</Category>
+        <Number>25205049</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612999.007</C1>
+            <C2>1223801.175</C2>
+            <C3>461.93</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="fd05be58-45b8-40c5-a575-5a4e4f6dc708">
+        <Category>PCP3</Category>
+        <Number>25205047</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612681.921</C1>
+            <C2>1223904.737</C2>
+            <C3>455.69</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="15f50b67-a654-4cc2-b10d-518cc31db237">
+        <Category>PCP3</Category>
+        <Number>25205046</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612465.357</C1>
+            <C2>1224031.332</C2>
+            <C3>455.485</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="37056317-00cc-4982-a980-628b972b81e3">
+        <Category>PCP3</Category>
+        <Number>25205043</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612692.49</C1>
+            <C2>1224084.978</C2>
+            <C3>463.442</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="11448d81-ff0e-49a6-9525-fd8b826aea24">
+        <Category>PCP3</Category>
+        <Number>25205042</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612650.744</C1>
+            <C2>1224104.654</C2>
+            <C3>462.573</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="769f4c90-35f3-4524-a37d-ae39e987d3cc">
+        <Category>PCP3</Category>
+        <Number>25205038</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613813.025</C1>
+            <C2>1224436.57</C2>
+            <C3>478.793</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="9f4cc19e-8020-4d44-96f8-2023c3973588">
+        <Category>PCP3</Category>
+        <Number>25205037</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613540.763</C1>
+            <C2>1224473.983</C2>
+            <C3>474.864</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="05a1639d-16b7-4f2f-b52b-b337a422fffb">
+        <Category>PCP3</Category>
+        <Number>25205035</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613480.076</C1>
+            <C2>1224209.87</C2>
+            <C3>476.769</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="31c3d05f-83a7-4e27-aee8-f6948afd6efa">
+        <Category>PCP3</Category>
+        <Number>25205034</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613445.176</C1>
+            <C2>1224141.252</C2>
+            <C3>474.916</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="09921b89-8443-4a57-907d-d0226282e1e3">
+        <Category>PCP3</Category>
+        <Number>25205032</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613437.43</C1>
+            <C2>1223736.342</C2>
+            <C3>472.463</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="ae68df9e-469d-47dc-801c-d88649d4ad38">
+        <Category>PCP3</Category>
+        <Number>25205030</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613340.514</C1>
+            <C2>1223533.309</C2>
+            <C3>467.606</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="9d1fae79-b294-4c08-8966-7515a2ecec67">
+        <Category>PCP3</Category>
+        <Number>25205027</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613304.067</C1>
+            <C2>1223816.481</C2>
+            <C3>472.561</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="97af8a4c-a77f-4867-929a-a4c7cc12df02">
+        <Category>PCP3</Category>
+        <Number>25205021</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612979.933</C1>
+            <C2>1224067.992</C2>
+            <C3>467.049</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="3e2f1a39-ccaa-471d-9054-913d1eb3990d">
+        <Category>PCP3</Category>
+        <Number>25205018</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612763.854</C1>
+            <C2>1224199.842</C2>
+            <C3>465.004</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="90274c3c-9091-4293-aa90-b75f2b1aeb8d">
+        <Category>PCP3</Category>
+        <Number>25205017</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612740.829</C1>
+            <C2>1224074.839</C2>
+            <C3>464.031</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="4324cfe6-f141-4bf9-8138-51281cfbcc61">
+        <Category>PCP3</Category>
+        <Number>25205015</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612648.714</C1>
+            <C2>1224151.791</C2>
+            <C3>465.094</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="6ff0c351-99b2-4ed0-b096-f7820d0b5591">
+        <Category>PCP3</Category>
+        <Number>25205014</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612585.527</C1>
+            <C2>1224161.596</C2>
+            <C3>464.007</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="176bff3a-868a-4f5b-ae52-055c48fc1ebe">
+        <Category>PCP3</Category>
+        <Number>25205013</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612542.098</C1>
+            <C2>1224177.81</C2>
+            <C3>464.582</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="1e5fe690-0fdc-48d7-a12b-51bd3c8a9b7c">
+        <Category>PCP3</Category>
+        <Number>25205012</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612510.078</C1>
+            <C2>1224190.518</C2>
+            <C3>462.758</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="7590abc7-65af-475f-bfc2-35358b5699af">
+        <Category>PCP3</Category>
+        <Number>25205011</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612514.572</C1>
+            <C2>1224349.63</C2>
+            <C3>455.241</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="12c2e69e-5eb9-45ed-a876-2a67ce2bbfae">
+        <Category>PCP3</Category>
+        <Number>25205010</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612253.964</C1>
+            <C2>1224555.947</C2>
+            <C3>453.466</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="0b1ac762-99fd-4940-b42d-c5ada7824421">
+        <Category>PCP3</Category>
+        <Number>25205009</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612403.753</C1>
+            <C2>1224548.396</C2>
+            <C3>453.466</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="0bc15346-a4d5-431f-87b9-73b54799561b">
+        <Category>PCP3</Category>
+        <Number>25205008</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612444.266</C1>
+            <C2>1224618.206</C2>
+            <C3>453.259</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="3e1786b7-54d3-4c0f-a777-511322db4258">
+        <Category>PCP3</Category>
+        <Number>25205007</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612592.634</C1>
+            <C2>1224543.285</C2>
+            <C3>462.92</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="f186162d-43c7-48cb-9f8b-0d267f79aea6">
+        <Category>PCP3</Category>
+        <Number>25205004</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612385.981</C1>
+            <C2>1224471.844</C2>
+            <C3>453.883</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="54c109a6-41c3-4cc7-9c25-f05f1e5ee66e">
+        <Category>PCP3</Category>
+        <Number>25205003</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612365.866</C1>
+            <C2>1224534.694</C2>
+            <C3>453.142</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="e83b64da-9b6c-4ec3-8fb5-5c7501664728">
+        <Category>PCP3</Category>
+        <Number>25205002</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612343.593</C1>
+            <C2>1224615.348</C2>
+            <C3>453.374</C3>
+          </COORD>
+        </Geometry>
+        <Mark>tube</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="b40765f7-6b98-4b18-b1d6-a97f09d071fc">
+        <Category>PCP3</Category>
+        <Number>25205001</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612296.202</C1>
+            <C2>1224669.813</C2>
+            <C3>452.871</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="aff9c560-90d5-4544-a8a0-aa05e1647a66">
+        <Category>PCP3</Category>
+        <Number>25295153</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612823.381</C1>
+            <C2>1224710.69</C2>
+            <C3>460.89</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="5f80d095-d7d1-4603-b077-034a6b867696">
+        <Category>PCP3</Category>
+        <Number>11275281</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613354.36</C1>
+            <C2>1223998.094</C2>
+            <C3>474.46</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="3e2d712a-1580-4929-b09e-c51509daf3a0">
+        <Category>PCP3</Category>
+        <Number>11275271</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612478.533</C1>
+            <C2>1224569.582</C2>
+            <C3>470.25</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="c94fac04-9410-4533-8498-7ec37ace89f5"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="97ebb835-abec-4270-ba08-307a600cd3b4">
+        <Category>PCP3</Category>
+        <Number>25205208</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613263.482</C1>
+            <C2>1224334.335</C2>
+            <C3>468.856</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="a74398ad-1088-4e9b-9ed8-7f1f21a84459"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="58e50a81-0213-4621-a914-76725ef48d60">
+        <Category>PCP3</Category>
+        <Number>25205207</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613231.301</C1>
+            <C2>1224208.933</C2>
+            <C3>469.101</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="a74398ad-1088-4e9b-9ed8-7f1f21a84459"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="428df514-68f9-49ba-bb0f-b4f47cb2258d">
+        <Category>PCP3</Category>
+        <Number>25205206</Number>
+        <Geometry>
+          <COORD>
+            <C1>2613123.869</C1>
+            <C2>1224226.503</C2>
+            <C3>467.113</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="a74398ad-1088-4e9b-9ed8-7f1f21a84459"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="31536288-f246-4677-87e3-0486f2b66abd">
+        <Category>PCP3</Category>
+        <Number>25205205</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612977.194</C1>
+            <C2>1224248.849</C2>
+            <C3>465.892</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="a74398ad-1088-4e9b-9ed8-7f1f21a84459"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="2009607d-ab64-4237-a808-b62a01dbb507">
+        <Category>PCP3</Category>
+        <Number>25205204</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612783.448</C1>
+            <C2>1224263.474</C2>
+            <C3>464.546</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="a74398ad-1088-4e9b-9ed8-7f1f21a84459"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="b6a4f242-f23b-43bf-a8b3-072c8ad16931">
+        <Category>PCP3</Category>
+        <Number>25205203</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612682.037</C1>
+            <C2>1224290.261</C2>
+            <C3>463.103</C3>
+          </COORD>
+        </Geometry>
+        <Mark>bolt</Mark>
+        <r_Control_point_revision REF="a74398ad-1088-4e9b-9ed8-7f1f21a84459"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="5a9f253b-cc1d-47a2-a5d6-5cdd3c7cf70b">
+        <Category>PCP3</Category>
+        <Number>25205202</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612571.466</C1>
+            <C2>1224350.45</C2>
+            <C3>458.42</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="a74398ad-1088-4e9b-9ed8-7f1f21a84459"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+      <DMCSCHCP_20170503.Control_points.Control_point TID="58a57495-96a2-4c98-868b-3ce3599af70e">
+        <Category>PCP3</Category>
+        <Number>25205201</Number>
+        <Geometry>
+          <COORD>
+            <C1>2612501.921</C1>
+            <C2>1224389.859</C2>
+            <C3>454.756</C3>
+          </COORD>
+        </Geometry>
+        <Mark>boundary_marker</Mark>
+        <r_Control_point_revision REF="a74398ad-1088-4e9b-9ed8-7f1f21a84459"/>
+      </DMCSCHCP_20170503.Control_points.Control_point>
+    </DMCSCHCP_20170503.Control_points>
+  </DATASECTION>
+</TRANSFER>
