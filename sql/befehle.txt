@@ -1,4 +1,7 @@
-java -jar ~/Apps/ili2pg-3.8.1/ili2pg.jar --dbhost 192.168.50.4 --dbdatabase xanadu2 --dbusr stefan --dbpwd ziegler12 --nameByTopic --strokeArcs --createFkIdx --createGeomIdx --defaultSrsCode 2056 --models DM01AVCH24LV95D --dbschema ch_252000 --import ch_252000.itf
+java -jar ~/Apps/ili2pg-3.8.1/ili2pg.jar --dbhost 192.168.50.4 --dbdatabase xanadu2 --dbusr stefan --dbpwd ziegler12 --nameByTopic --strokeArcs --createFkIdx --createGeomIdx --defaultSrsCode 2056 --models DM01AVCH24LV95D --dbschema dm01_tmp --import ch_252000.itf
+
+
+# control points
 
 java -jar ~/Apps/ili2pg-3.8.1/ili2pg.jar --dbhost 192.168.50.4 --dbdatabase xanadu2 --dbusr stefan --dbpwd ziegler12 --nameByTopic --strokeArcs --createFk --createEnumTabs --createGeomIdx --createNumChecks --createFkIdx --defaultSrsCode 2056 --modeldir "http://models.interlis.ch;." --models DMCSCHCP_20170503 --dbschema dm_cs_ch_cp --schemaimport
 
@@ -10,3 +13,10 @@ java -jar ~/Apps/ili2pg-3.8.1/ili2pg.jar --dbhost 192.168.50.4 --dbdatabase xana
 java -jar ~/Apps/ili2pg-3.8.1/ili2pg.jar --dbhost 192.168.50.4 --dbdatabase xanadu2 --dbusr stefan --dbpwd ziegler12 --nameByTopic --strokeArcs --createFk --createEnumTabs --createGeomIdx --createNumChecks --createFkIdx --defaultSrsCode 2056 --modeldir "http://models.interlis.ch;." --models DMCSCHLN_20170503 --dbschema dm_cs_ch_ln --schemaimport
 
 java -jar ~/Apps/ili2pg-3.8.1/ili2pg.jar --dbhost 192.168.50.4 --dbdatabase xanadu2 --dbusr stefan --dbpwd ziegler12 --nameByTopic --strokeArcs --createFk --createEnumTabs --createGeomIdx --createNumChecks --createFkIdx --defaultSrsCode 2056 --disableValidation --modeldir "http://models.interlis.ch;." --models DMCSCHLN_20170503 --dbschema dm_cs_ch_ln --export local_names.xtf
+
+
+# ownership
+
+java -jar ~/Apps/ili2pg-3.8.1/ili2pg.jar --dbhost 192.168.50.4 --dbdatabase xanadu2 --dbusr stefan --dbpwd ziegler12 --nameByTopic --strokeArcs --createFk --createEnumTabs --createGeomIdx --createNumChecks --createFkIdx --defaultSrsCode 2056 --modeldir "http://models.interlis.ch;." --models DMCSCHOS_20170503 --dbschema dm_cs_ch_os --schemaimport
+
+java -jar ~/Apps/ili2pg-3.8.1/ili2pg.jar --dbhost 192.168.50.4 --dbdatabase xanadu2 --dbusr stefan --dbpwd ziegler12 --nameByTopic --strokeArcs --createFk --createEnumTabs --createGeomIdx --createNumChecks --createFkIdx --defaultSrsCode 2056 --modeldir "http://models.interlis.ch;." --models DMCSCHOS_20170503 --dbschema dm_cs_ch_os --export ownership.xtf

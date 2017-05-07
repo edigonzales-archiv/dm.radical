@@ -1,0 +1,209 @@
+INTERLIS 2.3;
+
+MODEL DMCSCHOS_20170503 (en)
+AT "mailto:stefan@localhost"
+VERSION "2017-05-03"  =
+  IMPORTS GeometryCHLV95_20170503;
+
+  TOPIC Ownership =
+    OID AS INTERLIS.UUIDOID;
+
+    DOMAIN
+
+      Completeness = (
+        incomplete,
+        complete
+      );
+
+      Right_type = (
+        building_right,
+        right_to_spring_water,
+        concession,
+        other
+      );
+
+      Validity = (
+        in_effect,
+        disputed
+      );
+
+    CLASS Auxiliary_line =
+      Geometry : MANDATORY GeometryCHLV95_20170503.Line;
+    END Auxiliary_line;
+
+    CLASS Auxiliary_line_Proj =
+      Geometry : MANDATORY GeometryCHLV95_20170503.Line;
+    END Auxiliary_line_Proj;
+
+    CLASS Boundary_point =
+      Number : TEXT*12;
+      Geometry : MANDATORY GeometryCHLV95_20170503.Coord3;
+      Mark : MANDATORY (
+        undefined,
+        other,
+        not_materialized,
+        cross,
+        stake,
+        tube,
+        bolt,
+        artificial_boundary_marker,
+        boundary_marker
+      );
+      UNIQUE Geometry;
+    END Boundary_point;
+
+    CLASS Mineral_right =
+      Number_Property_part : TEXT*12;
+      Geometry : MANDATORY GeometryCHLV95_20170503.Surface;
+      Area : MANDATORY 1 .. 999999999;
+    END Mineral_right;
+
+    CLASS Mineral_right_Proj =
+      Number_Property_part : TEXT*15;
+      Geometry : MANDATORY GeometryCHLV95_20170503.Surface;
+      Area : MANDATORY 1 .. 999999999;
+    END Mineral_right_Proj;
+
+    CLASS Numbering_range =
+      IdentND : MANDATORY TEXT*12;
+      Perimeter : MANDATORY GeometryCHLV95_20170503.Surface;
+    END Numbering_range;
+
+    CLASS Property_Pos =
+      Pos : MANDATORY GeometryCHLV95_20170503.Coord3;
+      Ori : MANDATORY GeometryCHLV95_20170503.Orientation;
+      HAli : MANDATORY INTERLIS.HALIGNMENT;
+      VAli : MANDATORY INTERLIS.VALIGNMENT;
+    END Property_Pos;
+
+    CLASS Property_Proj =
+      Number : MANDATORY TEXT*15;
+      EGRIS_EGRID : TEXT*14;
+      Validity : MANDATORY TEXT*20;
+      Completeness : MANDATORY TEXT*20;
+      Total_Area : 1 .. 999999999;
+    END Property_Proj;
+
+    CLASS Property_Proj_Pos =
+      Pos : MANDATORY GeometryCHLV95_20170503.Coord3;
+      Ori : MANDATORY GeometryCHLV95_20170503.Orientation;
+      HAli : MANDATORY INTERLIS.HALIGNMENT;
+      VAli : MANDATORY INTERLIS.VALIGNMENT;
+    END Property_Proj_Pos;
+
+    CLASS Property_revision =
+      Revision_Id : MANDATORY TEXT*1024;
+      Description : MANDATORY TEXT*1024;
+      Perimeter : GeometryCHLV95_20170503.Surface;
+      State_of : INTERLIS.XMLDate;
+      UNIQUE Revision_Id;
+    END Property_revision;
+
+    CLASS Real_estate =
+      Number_Property_part : TEXT*15;
+      Geometry : MANDATORY GeometryCHLV95_20170503.Area;
+      Area : MANDATORY 1 .. 999999999;
+    END Real_estate;
+
+    CLASS Real_estate_Proj =
+      Number_Property_part : TEXT*15;
+      Geometry : MANDATORY GeometryCHLV95_20170503.Surface;
+      Area : MANDATORY 1 .. 999999999;
+    END Real_estate_Proj;
+
+    CLASS Distinct_permanent_right =
+      Number_Property_part : TEXT*12;
+      Geometry : MANDATORY GeometryCHLV95_20170503.Surface;
+      Area : MANDATORY 1 .. 999999999;
+      Type : MANDATORY Right_type;
+    END Distinct_permanent_right;
+
+    CLASS Distinct_permanent_right_Proj =
+      Number_Property_part : TEXT*15;
+      Geometry : MANDATORY GeometryCHLV95_20170503.Surface;
+      Area : MANDATORY 1 .. 999999999;
+      Type : MANDATORY Right_type;
+    END Distinct_permanent_right_Proj;
+
+    CLASS Property =
+      Number : MANDATORY TEXT*15;
+      EGRIS_EGRID : MANDATORY TEXT*14;
+      Validity : MANDATORY Validity;
+      Completeness : MANDATORY Completeness;
+      Total_Area : 1 .. 999999999;
+      UNIQUE EGRIS_EGRID;
+    END Property;
+
+    ASSOCIATION Auxiliary_line_Proj_Property_Proj =
+      r_Aux_line_of -- {0..*} Auxiliary_line_Proj;
+      r_Property_Proj_Pos -<#> {1} Property_Proj_Pos;
+    END Auxiliary_line_Proj_Property_Proj;
+
+    ASSOCIATION Auxiliary_line_Property_Pos =
+      r_Aux_line_of -- {0..1} Auxiliary_line;
+      r_Property_Pos -<#> {1} Property_Pos;
+    END Auxiliary_line_Property_Pos;
+
+    ASSOCIATION Boundary_point_Property_revision =
+      r_Boundary_point_of -- {0..*} Boundary_point;
+      r_Property_revision -- {1} Property_revision;
+    END Boundary_point_Property_revision;
+
+    ASSOCIATION Mineral_right_Proj_Property_Proj =
+      r_Mineral_right_Proj_of -- {0..*} Mineral_right_Proj;
+      r_Property_Proj -<#> {1} Property_Proj;
+    END Mineral_right_Proj_Property_Proj;
+
+    ASSOCIATION Property_Proj_Pos_Property_Proj =
+      r_Property_Proj_Pos_of -- {1..*} Property_Proj_Pos;
+      r_Property_Proj -<#> {1} Property_Proj;
+    END Property_Proj_Pos_Property_Proj;
+
+    ASSOCIATION Property_Proj_Property_revision =
+      r_Property_Proj_of -- {0..*} Property_Proj;
+      r_Property_revision -- {1} Property_revision;
+    END Property_Proj_Property_revision;
+
+    ASSOCIATION Property_revision_Numbering_range =
+      r_Property_revision_IdentND -- {0..*} Property_revision;
+      r_Numbering_range -- {0..1} Numbering_range;
+    END Property_revision_Numbering_range;
+
+    ASSOCIATION Real_estate_Proj_Property_Proj =
+      r_Real_estate_Proj_of -- {0..*} Real_estate_Proj;
+      r_Property_Proj -<#> {1} Property_Proj;
+    END Real_estate_Proj_Property_Proj;
+
+    ASSOCIATION DPR_Proj_Property =
+      r_DPR_Proj_of -- {0..*} Distinct_permanent_right_Proj;
+      r_Property_Proj -<#> {1} Property_Proj;
+    END DPR_Proj_Property;
+
+    ASSOCIATION DPR_Property =
+      r_DPR_of -- {0..*} Distinct_permanent_right;
+      r_Property -<#> {1} Property;
+    END DPR_Property;
+
+    ASSOCIATION Mineral_right_Property =
+      r_Mineral_right_of -- {0..*} Mineral_right;
+      r_Property -<#> {1} Property;
+    END Mineral_right_Property;
+
+    ASSOCIATION Pos_Property =
+      r_Pos_of -- {1..*} Property_Pos;
+      r_Property -<#> {1} Property;
+    END Pos_Property;
+
+    ASSOCIATION Property_Property_revision =
+      r_Property_revision -- {1} Property_revision;
+      r_Property_of -- {0..*} Property;
+    END Property_Property_revision;
+
+    ASSOCIATION Real_estate_Property =
+      r_Real_estate_of -- {0..*} Real_estate;
+      r_Property -<#> {1} Property;
+    END Real_estate_Property;
+
+  END Ownership;
+
+END DMCSCHOS_20170503.

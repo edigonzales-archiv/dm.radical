@@ -22,6 +22,7 @@ with lfp as
     from 
         ch_252000.fixpunktekatgrie3_lfp3
 ),
+-- TODO: CASE WHEN gueltigereintrag IS NULL
 nf as (
 	insert into 
 		dm_cs_ch_cp.control_points_control_point_revision (t_id, description, state_of, perimeter)
