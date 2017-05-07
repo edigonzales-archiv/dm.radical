@@ -47,6 +47,8 @@ VERSION "2017-05-03"  =
     CLASS Municipality =
       Name : MANDATORY TEXT*1024;
       FOSNr : MANDATORY 1 .. 9999;
+      UNIQUE Name;
+      UNIQUE FOSNr;
     END Municipality;
 
     ASSOCIATION Boundary_terr_point_Municipal_boundary_revision =

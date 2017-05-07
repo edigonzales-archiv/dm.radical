@@ -1,0 +1,20 @@
+INTERLIS 2.3;
+
+MODEL DMCSCHGD_20170503 (en)
+AT "mailto:stefan@localhost"
+VERSION "2017-05-03"  =
+  IMPORTS GeometryCHLV95_20170503;
+
+  TOPIC Ground_displacements =
+    OID AS INTERLIS.UUIDOID;
+
+    CLASS Ground_displacement =
+      Name : MANDATORY TEXT*1024;
+      Id : MANDATORY TEXT*255;
+      Geometry : MANDATORY GeometryCHLV95_20170503.Surface;
+      State_of : MANDATORY INTERLIS.XMLDate;
+    END Ground_displacement;
+
+  END Ground_displacements;
+
+END DMCSCHGD_20170503.

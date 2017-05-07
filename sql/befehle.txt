@@ -27,3 +27,9 @@ java -jar ~/Apps/ili2pg-3.8.1/ili2pg.jar --dbhost 192.168.50.4 --dbdatabase xana
 java -jar ~/Apps/ili2pg-3.8.1/ili2pg.jar --dbhost 192.168.50.4 --dbdatabase xanadu2 --dbusr stefan --dbpwd ziegler12 --nameByTopic --strokeArcs --createFk --createEnumTabs --createGeomIdx --createNumChecks --createFkIdx --defaultSrsCode 2056 --modeldir "http://models.interlis.ch;." --models DMCSCHTB_20170503 --dbschema dm_cs_ch_tb --schemaimport
 
 java -jar ~/Apps/ili2pg-3.8.1/ili2pg.jar --dbhost 192.168.50.4 --dbdatabase xanadu2 --dbusr stefan --dbpwd ziegler12 --nameByTopic --strokeArcs --createFk --createEnumTabs --createGeomIdx --createNumChecks --createFkIdx --defaultSrsCode 2056 --modeldir "http://models.interlis.ch;." --models DMCSCHTB_20170503 --dbschema dm_cs_ch_tb --export territorial_boundary.xtf
+
+
+# ground displacement
+
+java -jar ~/Apps/ili2pg-3.8.1/ili2pg.jar --dbhost 192.168.50.4 --dbdatabase xanadu2 --dbusr stefan --dbpwd ziegler12 --nameByTopic --strokeArcs --createFk --createEnumTabs --createGeomIdx --createNumChecks --createFkIdx --defaultSrsCode 2056 --modeldir "http://models.interlis.ch;." --models DMCSCHGD_20170503 --dbschema dm_cs_ch_gd --schemaimport
+
