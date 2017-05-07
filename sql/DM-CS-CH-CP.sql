@@ -6,21 +6,21 @@ with lfp as
     select 
         t_id, 'PCP1' as category, nummer, geometrie, hoehegeom, punktzeichen, entstehung
     from 
-        ch_252000.fixpunktekatgrie1_lfp1
+        dm01_tmp.fixpunktekatgrie1_lfp1
         
     union all    
     
     select 
         t_id, 'PCP2' as category, nummer, geometrie, hoehegeom, punktzeichen, entstehung
     from 
-        ch_252000.fixpunktekatgrie2_lfp2
+        dm01_tmp.fixpunktekatgrie2_lfp2
         
     union all
     
     select 
         t_id, 'PCP3' as category, nummer, geometrie, hoehegeom, punktzeichen, entstehung
     from 
-        ch_252000.fixpunktekatgrie3_lfp3
+        dm01_tmp.fixpunktekatgrie3_lfp3
 ),
 -- TODO: CASE WHEN gueltigereintrag IS NULL
 nf as (
@@ -30,21 +30,21 @@ nf as (
     select 
         t_id, beschreibung as description, gueltigereintrag as state_of, ST_Force3D(perimeter) as perimeter
     from 
-        ch_252000.fixpunktekatgrie1_lfp1nachfuehrung
+        dm01_tmp.fixpunktekatgrie1_lfp1nachfuehrung
         
     union all
     
     select 
         t_id, beschreibung as description, gueltigereintrag as state_of, ST_Force3D(perimeter) as perimeter
     from 
-        ch_252000.fixpunktekatgrie2_lfp2nachfuehrung
+        dm01_tmp.fixpunktekatgrie2_lfp2nachfuehrung
         
     union all
     
     select 
         t_id, beschreibung as description, gueltigereintrag as state_of, ST_Force3D(perimeter) as perimeter
     from 
-        ch_252000.fixpunktekatgrie3_lfp3nachfuehrung
+        dm01_tmp.fixpunktekatgrie3_lfp3nachfuehrung
     returning *
 ),
 lfp_ng as

@@ -18,7 +18,7 @@ with nf as
 		t_id, identifikator as revision_id, beschreibung as description, gueltigereintrag as state_of, 
 		perimeter as perimeter
 	from 
-		ch_252000.nomenklatur_nknachfuehrung
+		dm01_tmp.nomenklatur_nknachfuehrung
 	returning *
 ),
 local_geo_name as
@@ -31,7 +31,7 @@ local_geo_name as
 		ST_SnapToGrid(ST_Force3D(flurn.geometrie), 0.00001) as geometry
 	from
 		nf,
-		ch_252000.nomenklatur_flurname as flurn
+		dm01_tmp.nomenklatur_flurname as flurn
 	where
 		nf.t_id = flurn.entstehung
 	returning *
@@ -44,7 +44,7 @@ local_geo_name_pos as
 	select 
 		t_id, ori, hali, vali, flurnamepos_von as r_local_geographical_name, ST_Force3D(pos) as pos
 	from 
-		ch_252000.nomenklatur_flurnamepos
+		dm01_tmp.nomenklatur_flurnamepos
 	returning *
 ),
 place_name as 
@@ -57,7 +57,7 @@ place_name as
 		ST_SnapToGrid(ST_Force3D(ort.geometrie), 0.00001) as geometry
 	from
 		nf,
-		ch_252000.nomenklatur_ortsname as ort
+		dm01_tmp.nomenklatur_ortsname as ort
 	where
 		nf.t_id = ort.entstehung
 	returning *
@@ -70,7 +70,7 @@ place_name_pos as
 	select 
 		t_id, ori, hali, vali, ortsnamepos_von as r_place_name, ST_Force3D(pos) as pos
 	from 
-		ch_252000.nomenklatur_ortsnamepos
+		dm01_tmp.nomenklatur_ortsnamepos
 	returning *
 ),
 name_of_locality as 
@@ -83,8 +83,8 @@ name_of_locality as
 		ST_Force3D(gelpos.pos) as geometry
 	from
 		nf,
-		ch_252000.nomenklatur_ortsname as gel,
-		ch_252000.nomenklatur_gelaendenamepos as gelpos
+		dm01_tmp.nomenklatur_ortsname as gel,
+		dm01_tmp.nomenklatur_gelaendenamepos as gelpos
 	where
 		nf.t_id = gel.entstehung
 	and
@@ -99,7 +99,7 @@ name_of_locality_pos as
 	select 
 		t_id, ori, hali, vali, gelaendenamepos_von as r_name_of_locality, ST_Force3D(pos) as pos
 	from 
-		ch_252000.nomenklatur_gelaendenamepos
+		dm01_tmp.nomenklatur_gelaendenamepos
 	returning *
 )
 select 
