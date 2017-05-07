@@ -37,7 +37,7 @@ VERSION "2017-05-03"  =
     END Control_point_revision;
 
     ASSOCIATION Control_point_Control_point_revision =
-      r_Control_point -- {0..*} Control_point;
+      r_Control_point_of -- {0..*} Control_point;
       r_Control_point_revision -- {1} Control_point_revision;
     END Control_point_Control_point_revision;
 
