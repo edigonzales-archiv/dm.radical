@@ -1,0 +1,74 @@
+INTERLIS 2.3;
+
+MODEL DMCSCHTB_20170503 (en)
+AT "mailto:stefan@localhost"
+VERSION "2017-05-03"  =
+  IMPORTS GeometryCHLV95_20170503;
+
+  TOPIC Territorial_boundaries =
+    OID AS INTERLIS.UUIDOID;
+
+    CLASS Boundary_terr_point =
+      Number : TEXT*15;
+      Geometry : MANDATORY GeometryCHLV95_20170503.Coord3;
+      Mark : MANDATORY (
+        artificial_boundary_marker,
+        bolt,
+        tube,
+        stake,
+        cross,
+        not_materialized,
+        other,
+        boundary_marker,
+        undefined
+      );
+      Territorial_point : MANDATORY INTERLIS.BOOLEAN;
+    END Boundary_terr_point;
+
+    CLASS Municipal_boundary =
+      Geometry : MANDATORY GeometryCHLV95_20170503.Area;
+    END Municipal_boundary;
+
+    CLASS Municipal_boundary_Proj =
+      Geometry : MANDATORY GeometryCHLV95_20170503.Line;
+    END Municipal_boundary_Proj;
+
+    CLASS Municipal_boundary_revision =
+      Description : MANDATORY TEXT*1024;
+      Perimeter : GeometryCHLV95_20170503.Surface;
+      State_of : MANDATORY INTERLIS.XMLDate;
+      Revision_Id : MANDATORY TEXT*255;
+      Validity : MANDATORY (
+        valid,
+        planned
+      );
+    END Municipal_boundary_revision;
+
+    CLASS Municipality =
+      Name : MANDATORY TEXT*1024;
+      FOSNr : MANDATORY 1 .. 9999;
+    END Municipality;
+
+    ASSOCIATION Boundary_terr_point_Municipal_boundary_revision =
+      r_Boundary_terr_point_of -- {0..*} Boundary_terr_point;
+      r_Municipal_boundary_revision -- {1} Municipal_boundary_revision;
+    END Boundary_terr_point_Municipal_boundary_revision;
+
+    ASSOCIATION Municipal_bounary_Proj_Municipal_boundary_revision =
+      r_Municipal_boundary_Proj_of -- {0..*} Municipal_boundary_Proj;
+      r_Municipal_boundary_revision -- {1} Municipal_boundary_revision;
+    END Municipal_bounary_Proj_Municipal_boundary_revision;
+
+    ASSOCIATION Municipal_boundary_Municipal_boundary_revision =
+      r_Municipal_boundary_of -- {0..*} Municipal_boundary;
+      r_Municipal_boundary_revision -- {1} Municipal_boundary_revision;
+    END Municipal_boundary_Municipal_boundary_revision;
+
+    ASSOCIATION Municipal_boundary_Municipality =
+      r_Municipal_boundary_of -- {1..*} Municipal_boundary;
+      r_Municipality -- {1} Municipality;
+    END Municipal_boundary_Municipality;
+
+  END Territorial_boundaries;
+
+END DMCSCHTB_20170503.

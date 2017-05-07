@@ -96,6 +96,10 @@ VERSION "2017-05-03"  =
       Description : MANDATORY TEXT*1024;
       Perimeter : GeometryCHLV95_20170503.Surface;
       State_of : INTERLIS.XMLDate;
+      Validity : MANDATORY (
+        valid,
+        planned
+      );
       UNIQUE Revision_Id;
     END Property_revision;
 

@@ -17,10 +17,14 @@ with nf as
 (
     insert into 
         dm_cs_ch_os.ownership_property_revision (t_id, revision_id, 
-        description, state_of, perimeter)
+        description, state_of, perimeter, validity)
     select 
         t_id, identifikator as revision_id, beschreibung as description, 
-        gueltigereintrag as state_of, perimeter as perimeter
+        gueltigereintrag as state_of, ST_Force3D(perimeter) as perimeter, 
+        case 
+            when gueltigkeit = 'gueltig' then 'valid'
+            else 'planned'
+        end as validity
     from 
         dm01_tmp.liegenschaften_lsnachfuehrung
     returning *
