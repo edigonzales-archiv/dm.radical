@@ -12,10 +12,11 @@ delete from dm_cs_ch_ln.local_names_local_name_revision;
 with nf as
 (
 	insert into 
-		dm_cs_ch_ln.local_names_local_name_revision (t_id, description, 
+		dm_cs_ch_ln.local_names_local_name_revision (t_id, revision_id, description, 
 		state_of, perimeter)
 	select 
-		t_id, beschreibung as description, gueltigereintrag as state_of, perimeter as perimeter
+		t_id, identifikator as revision_id, beschreibung as description, gueltigereintrag as state_of, 
+		perimeter as perimeter
 	from 
 		ch_252000.nomenklatur_nknachfuehrung
 	returning *

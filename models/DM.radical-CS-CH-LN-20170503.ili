@@ -25,6 +25,7 @@ VERSION "2017-05-03"  =
       Description : MANDATORY TEXT*1024;
       Perimeter : GeometryCHLV95_20170503.Surface;
       State_of : INTERLIS.XMLDate;
+      Revision_Id : MANDATORY TEXT*255;
     END Local_name_revision;
 
     CLASS Name_of_locality =

@@ -92,7 +92,7 @@ VERSION "2017-05-03"  =
     END Property_Proj_Pos;
 
     CLASS Property_revision =
-      Revision_Id : MANDATORY TEXT*1024;
+      Revision_Id : MANDATORY TEXT*255;
       Description : MANDATORY TEXT*1024;
       Perimeter : GeometryCHLV95_20170503.Surface;
       State_of : INTERLIS.XMLDate;
